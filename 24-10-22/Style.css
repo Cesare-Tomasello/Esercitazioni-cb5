@@ -1,0 +1,8 @@
+.bottone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 200px;
+  height: 200px;
+}
