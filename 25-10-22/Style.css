@@ -1,0 +1,25 @@
+body {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Esercizio_giornaliero {
+  border: 2px solid;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.Esercizio_giornaliero p {
+  font-size: xx-large;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+}
