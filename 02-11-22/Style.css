@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.most_popular {
+  border: 2px solid red;
+}
+
+.lower_price {
+  border: 2px solid blue;
+}
