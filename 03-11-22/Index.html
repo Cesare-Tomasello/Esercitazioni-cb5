@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <script src="./Script.js" type="module"></script>
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <nav class="navbar" id="nav">
+      <div class="nav_logo">
+        <img src="/03-11-22/Cart.png" alt="" />
+      </div>
+      <h1 class="nav_title">Online Shop</h1>
+      <div class="links">
+        <a href="#cheap">Cheap Products</a>
+        <a href="#best">Best Products</a>
+        <a href="#contacts">Contacts</a>
+      </div>
+    </nav>
+    <div class="hero"></div>
+    <main class="shop">
+      <h2 class="shop_title">Lower Prices</h2>
+      <section class="lower_prices" id="cheap"></section>
+      <h2 class="shop_title">Best Seller</h2>
+      <section class="best_seller" id="best"></section>
+    </main>
+
+    <section class="contacts" id="contacts">
+      <form action="">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Insert your Name"
+        />
+        <label for="surname">Surname</label>
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          placeholder="Insert your Surname"
+        />
+        <label for="mail">E-mail</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Insert your E-mail"
+        />
+        <label for="textarea">Let us know your opinion!</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="22"
+          rows="10"
+          placeholder="Type your message here"
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+      <a href="#nav">Home</a>
+    </section>
+    <footer class="credits">Made with patience in Edgemony ®️</footer>
+  </body>
+</html>
