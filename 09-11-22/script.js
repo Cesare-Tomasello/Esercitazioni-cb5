@@ -1,9 +1,3 @@
-// for (let i = 0; i < 150; i++) {
-//   fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
-//     .then((res) => res.json())
-//     .then((res) => pokemonCardCreator(res));
-// }
-
 const urlArray = [];
 
 for (let i = 1; i <= 150; i++) {
@@ -32,7 +26,7 @@ const pokemonCardCreator = (data) => {
   cardName.textContent = data.name;
 
   const cardType = document.createElement("p");
-  cardType.textContent = "type: " + data.types[0].type.name;
+  cardType.textContent = "Type: " + data.types[0].type.name;
 
   cardEl.append(cardImg, cardId, cardName, cardType);
   bodyEl.appendChild(cardEl);
