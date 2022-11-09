@@ -1,12 +1,8 @@
-fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
-  .then((res) => res.json())
-  .then((res) => {
-    res.results.map((item) =>
-      fetch(item.url)
-        .then((result) => result.json())
-        .then((pokemon) => pokemonCardCreator(pokemon))
-    );
-  });
+for (let i = 0; i < 150; i++) {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+    .then((res) => res.json())
+    .then((res) => pokemonCardCreator(res));
+}
 
 const bodyEl = document.querySelector("body");
 
