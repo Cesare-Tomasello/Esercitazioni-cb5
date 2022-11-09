@@ -20,7 +20,13 @@ const pokemonCardCreator = (data) => {
 
   const cardId = document.createElement("p");
   cardId.className = "pokemon_id";
-  cardId.textContent = "#" + data.id;
+  if (data.id < 10) {
+    cardId.textContent = "#00" + data.id;
+  } else if (data.id < 100) {
+    cardId.textContent = "#0" + data.id;
+  } else {
+    cardId.textContent = "#" + data.id;
+  }
 
   const cardName = document.createElement("h1");
   cardName.textContent = data.name;
@@ -31,3 +37,5 @@ const pokemonCardCreator = (data) => {
   cardEl.append(cardImg, cardId, cardName, cardType);
   bodyEl.appendChild(cardEl);
 };
+
+// Ho solo aggiunto il ciclo di if else per il data id
