@@ -30,7 +30,7 @@ body {
   text-align: center;
   align-items: center;
   padding: 10px;
-  width: 500px;
+  width: 90vw;
   border-radius: 20px;
   font-weight: bold;
   box-shadow: var(--box_shadow);
@@ -47,8 +47,9 @@ body {
   color: var(--statement_color);
 }
 
-#svg {
+#svg img {
   margin-bottom: 40px;
+  width: 70%;
 }
 
 #btn {
@@ -64,4 +65,15 @@ body {
 
 #btn:hover {
   box-shadow: 0 0 30px var(--button_shadow_hover);
+}
+
+@media only screen and (min-width: 1280px) {
+  #svg img {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .container {
+    width: 500px;
+  }
 }
