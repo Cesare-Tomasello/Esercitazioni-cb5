@@ -1,0 +1,67 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+
+:root {
+  --body_background: hsl(218, 23%, 16%);
+  --alternative_text_color: white;
+  --button_shadow_hover: hsl(150, 100%, 66%);
+  --button_background: hsl(150, 100%, 66%);
+  --container_color: hsl(217, 19%, 24%);
+  --box_shadow: 5px 5px 15px black;
+  --statement_color: hsl(193, 38%, 86%);
+  --id_color: hsl(150, 100%, 66%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--body_background);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 500px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: var(--box_shadow);
+  background-color: var(--container_color);
+}
+
+#id {
+  color: var(--id_color);
+  font-size: 0.9rem;
+  word-spacing: 5px;
+}
+
+#statement {
+  color: var(--statement_color);
+}
+
+#svg {
+  margin-bottom: 40px;
+}
+
+#btn {
+  position: absolute;
+  bottom: -30px;
+  padding: 15px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--button_background);
+}
+
+#btn:hover {
+  box-shadow: 0 0 30px var(--button_shadow_hover);
+}

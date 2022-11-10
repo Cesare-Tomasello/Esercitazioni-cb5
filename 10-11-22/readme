@@ -1,0 +1,16 @@
+Cose da implementare:
+
+-Container in cui mettere
+p (id)
+h1 (testo)
+p (immagine separatore)
+button
+
+-Fare il fetch dell'url che ci da le frasi
+
+-creare una funzione da applicare al .then che modifichi
+il contenuto del "p" e il contenuto dell' "h1" sostituendoli
+con le frasi e gli id provenienti dall'url -->
+
+-aggiungere il loader
+edit: ho provato ad aggiungerlo e si è rotto tutto, proverò in seguito
