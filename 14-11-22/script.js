@@ -3,13 +3,18 @@ let result = `https://jsonplaceholder.typicode.com/posts/${index}`;
 
 const loader = document.getElementById("loader");
 
-fetch(result)
-  .then((res) => res.json())
-  .then((res) => createCard(res))
-  .finally(() => {
-    loader.style = "display:none";
-    // Non riesco ad implementare il loader!
-  });
+const firstStart = () => {
+  fetch(result)
+    .then((res) => res.json())
+    .then((res) => createCard(res))
+    .finally(() => {
+      loader.style = "opacity: 0";
+      cardEL.style = "display: block";
+      buttonEl.style = "display: block";
+    });
+};
+
+// Loader implementato, spero nel modo corretto
 
 const bodyEl = document.querySelector("body");
 
@@ -34,6 +39,7 @@ const createCard = (res) => {
   titleEl.textContent = res.title;
 
   paragraphEl.textContent = res.body;
+
   cardEL.append(idEL, titleEl, paragraphEl);
   bodyEl.append(cardEL, buttonEl);
 };
@@ -59,4 +65,4 @@ prevButton.addEventListener("click", () => {
   else nextButton.disabled = false;
 });
 
-window.onload = prevButton.disabled = true;
+window.onload = firstStart();
