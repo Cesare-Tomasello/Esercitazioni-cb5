@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex {
+  position: relative;
+  height: 450px;
+  width: 550px;
+  background-image: url(https://i.etsystatic.com/11279093/r/il/d6ac58/1799315681/il_570xN.1799315681_ii1x.jpg);
+  background-size: 75%;
+  background-position: center;
+}
+
+form {
+  position: absolute;
+  right: 90px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  width: 150px;
+  height: 320px;
+  border-radius: 20px;
+}
+
+form #type,
+#name {
+  width: 70%;
+  background: transparent;
+  border: 1px dotted;
+  cursor: pointer;
+}
+
+form #type {
+  margin-bottom: 88px;
+}
+form .submit {
+  margin-left: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  position: absolute;
+  left: 95px;
+  top: 175px;
+  font-size: 0.8rem;
+  color: white;
+  width: 140px;
+  height: 65px;
+  overflow-y: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .pokedex {
+    position: relative;
+    height: 450px;
+    width: 550px;
+    background-image: url(https://i.etsystatic.com/11279093/r/il/d6ac58/1799315681/il_570xN.1799315681_ii1x.jpg);
+    background-size: 100%;
+  }
+
+  form {
+    position: absolute;
+    right: 70px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 150px;
+    height: 320px;
+    border-radius: 20px;
+  }
+
+  form #type,
+  #name {
+    width: 80%;
+    background: transparent;
+    border: 1px dotted;
+    cursor: pointer;
+  }
+
+  form #type {
+    margin-bottom: 95px;
+  }
+  form .submit {
+    margin-top: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  ul {
+    position: absolute;
+    left: 50px;
+    top: 156px;
+    color: white;
+    width: 135px;
+    height: 90px;
+    overflow-y: scroll;
+  }
+}

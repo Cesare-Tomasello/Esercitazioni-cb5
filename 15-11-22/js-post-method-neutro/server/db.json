@@ -1,0 +1,44 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasarur",
+      "type": "grass"
+    },
+    {
+      "id": 2,
+      "name": "Ivysaur",
+      "type": "grass"
+    },
+    {
+      "id": "3",
+      "name": "Venosaur",
+      "type": "grass"
+    },
+    {
+      "id": "4",
+      "name": "Charmender",
+      "type": "fire"
+    },
+    {
+      "id": "5",
+      "name": "Charmeleon",
+      "type": "fire"
+    },
+    {
+      "id": "385c36e1-a8bc-44eb-887b-93c9c50e8a7b",
+      "name": "Charmender",
+      "type": "Fire"
+    },
+    {
+      "id": "11286e3e-782e-459a-88a1-8ab18db40ac3",
+      "name": "Charmender",
+      "type": "water"
+    },
+    {
+      "id": "0f4092db-b5a4-4135-9b4a-3ff475c2e2d8",
+      "name": "Simone",
+      "type": "Potentissimo"
+    }
+  ]
+}
