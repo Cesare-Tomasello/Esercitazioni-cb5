@@ -1,0 +1,19 @@
+{
+  "pokemon": [
+    {
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "id": 1
+    },
+    {
+      "name": "Charmender",
+      "type": "Fire",
+      "id": 2
+    },
+    {
+      "name": "Jolteon",
+      "type": "Electric",
+      "id": 3
+    }
+  ]
+}
