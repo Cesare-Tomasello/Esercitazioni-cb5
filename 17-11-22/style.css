@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  height: 300px;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
