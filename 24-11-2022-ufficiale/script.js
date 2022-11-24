@@ -51,7 +51,7 @@ app.get("/sottrazione", function (req, res) {
 });
 
 app.get("/pagina_moltiplicazione", function (req, res) {
-  res.sendFile("moltiplicazione.html", { root: __dirname + "/src/html" }); //1
+  res.sendFile("moltiplicazione.html", { root: __dirname + "/src/html" }); //
 });
 
 app.get("/moltiplicazione", function (req, res) {
