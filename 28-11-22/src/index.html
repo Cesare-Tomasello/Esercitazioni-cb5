@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Calcolatrice</title>
+  </head>
+  <body>
+    <section>
+      <h1>Calcolatrice</h1>
+      <form name="calcolatrice">
+        <input
+          type="text"
+          name="param1"
+          class="parametro1"
+          placeholder="Primo numero"
+          required
+        />
+        <input
+          type="text"
+          name="param2"
+          class="parametro2"
+          placeholder="Secondo numero"
+          required
+        />
+        <p>Scegli L'operazione:</p>
+        <div class="buttons">
+          <div class="button">
+            <label for="+">Più</label>
+            <button name="+" class="btn somma">➕</button>
+          </div>
+          <div class="button">
+            <label for="-">Meno</label>
+            <button name="-" class="btn sottrazione">➖</button>
+          </div>
+          <div class="button">
+            <label for="*">Per</label>
+            <button name="*" class="btn moltiplicazione">✖️</button>
+          </div>
+          <div class="button">
+            <label for="/">Diviso</label>
+            <button name="/" class="btn divisione">➗</button>
+          </div>
+          <div class="button">
+            <label for="%">Resto</label>
+            <button name="%" class="btn modulo">💰</button>
+          </div>
+        </div>
+      </form>
+      <h2 class="result">Risultato</h2>
+    </section>
+    <script src="./js/script.js" type="text/javascript"></script>
+  </body>
+</html>
