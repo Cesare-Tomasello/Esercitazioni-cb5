@@ -45,6 +45,9 @@ app.get("/attore", function (req, res) {
 });
 
 app.post("/attore", function (req, res) {
+  const attori_json = readFileSync("./src/attori.json", "utf8");
+  const attori = JSON.parse(attori_json);
+
   const nuovo_attore = {
     id: attori.length == 0 ? 1 : attori[attori.length - 1].id + 1,
     nome: req.body.nome == undefined ? "" : req.body.nome,
@@ -60,11 +63,11 @@ app.post("/attore", function (req, res) {
     in_attivita: req.body.in_attivita == undefined ? "" : req.body.in_attivita,
   };
 
-  const attori_json = readFileSync("./src/attori.json", "utf8");
-  const attori = JSON.parse(attori_json);
+  attori.push(nuovo_attore);
+  console.log(attori);
 
   writeFileSync("./src/attori.json", JSON.stringify(attori));
-  res.status(200).send("Attore creato");
+  res.status(200).json({ messaggio: "stringa attore creato" });
 });
 
 app.delete("/attore", function (req, res) {

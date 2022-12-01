@@ -5,13 +5,14 @@ const createForm = document.forms.creation.elements;
 const submit = createForm.createBtn;
 
 const POST = async (BASE_URL, body) => {
-  return await fetch(BASE_URL, {
+  const res = await fetch(BASE_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: new URLSearchParams({ body }),
+    body: new URLSearchParams(body),
   });
+  return res.json();
 };
 
 const DELETE = async (BASE_URL, id) => {
@@ -25,9 +26,14 @@ const DELETE = async (BASE_URL, id) => {
   return res.json();
 };
 
-// submit.addEventListener("submit", (e) => {
-//   e.preventDefault();
-// });
+submit.addEventListener("click", () => {
+  let att = {
+    nome: createForm[0].value,
+    cognome: createForm[1].value,
+  };
+  console.log(att);
+  POST(actorUrl, att);
+});
 
 const createCard = (items) => {
   for (let item of items) {

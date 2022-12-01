@@ -27,6 +27,26 @@
     "riconoscimenti": "Tanti",
     "inizio_attivita": "",
     "fine_attivita": "",
-    "in_attivita": "true"
+    "in_attivita": true
+  },
+  {
+    "id": 4,
+    "nome": "Angelina",
+    "cognome": "Jolie",
+    "data_nascita": "",
+    "riconoscimenti": "",
+    "inizio_attivita": "",
+    "fine_attivita": "",
+    "in_attivita": ""
+  },
+  {
+    "id": 5,
+    "nome": "Angelina",
+    "cognome": "Jolie",
+    "data_nascita": "",
+    "riconoscimenti": "",
+    "inizio_attivita": "",
+    "fine_attivita": "",
+    "in_attivita": ""
   }
 ]
