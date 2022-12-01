@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Quentin",
+    "cognome": "Tarantino",
+    "data_nascita": "27/03/1963",
+    "riconoscimenti": "Elenco premi vinti",
+    "inizio_attivita": "1990",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 2,
+    "nome": "James",
+    "cognome": "Cameron",
+    "data_nascita": "16/08/1954",
+    "riconoscimenti": "Elenco premi vinti",
+    "inizio_attivita": "1978",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 3,
+    "nome": "Steven",
+    "cognome": "Spielberg",
+    "data_nascita": "18/12/1946",
+    "riconoscimenti": "Tanti",
+    "inizio_attivita": "1871",
+    "fine_attivita": "",
+    "in_attivita": true
+  }
+]
