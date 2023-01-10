@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 15px;
+  width: 350px;
+  height: 70px;
+  background-color: burlywood;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+  margin-bottom: 50px;
+}
+
+.lotteryBtn {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px black;
+  padding: 10px;
+  width: 120px;
+  background-color: rgb(100, 170, 251);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.disableBtn {
+  background-color: rgb(186, 186, 186);
+}
+
+.lotteryBtn:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+.disableBtn:active {
+  box-shadow: 3px 3px black;
+  transform: none;
+}
+
+.lotteryBtn:hover {
+  background-color: rgb(33, 134, 250);
+}
+
+.disableBtn:hover {
+  background-color: rgb(186, 186, 186);
+}
