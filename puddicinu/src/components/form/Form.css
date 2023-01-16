@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 60vw;
+}
+
+.formSearch {
+  height: 40px;
+  width: 200px;
+}
+
+.formSubmit {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.formSubmit:hover {
+  border: 1px solid black;
+}
