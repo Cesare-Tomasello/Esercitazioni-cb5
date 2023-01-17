@@ -1,0 +1,11 @@
+.Friendslist {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .Friendslist {
+    border: 1px solid red;
+    height: 100vh;
+    width: 200px;
+  }
+}

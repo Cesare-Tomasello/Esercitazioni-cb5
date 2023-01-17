@@ -5,6 +5,18 @@ import { GET } from "../utils/Fetch";
 
 function Post({ data }) {
   const [user, setUser] = useState({});
+  const imgUrl = "https://picsum.photos/380/330?";
+
+  let [like, setLike] = useState(false);
+  let [save, setSave] = useState(false);
+
+  const likeClick = () => {
+    like = setLike(!like);
+  };
+
+  const saveClick = () => {
+    save = setSave(!save);
+  };
 
   useEffect(() => {
     GET(`users/${data.userId}`).then((user) => setUser(user));
@@ -23,15 +35,26 @@ function Post({ data }) {
           </span>
         </div>
       </div>
-      <div className="fakePostImg"></div>
+      <div className="fakeImgContainer">
+        <img className="fakeImg" src={imgUrl + data.id} alt="Post Image" />
+      </div>
       <div className="postIcons">
         <div className="leftPostIcons">
-          <span className="material-symbols-outlined">favorite</span>
+          <button className="likeButton" onClick={likeClick}>
+            <span className="material-symbols-outlined">
+              {like == false ? "favorite" : "heart_plus"}
+            </span>
+          </button>
           <span className="material-symbols-outlined">chat_bubble</span>
           <span className="material-symbols-outlined">send</span>
         </div>
         <div className="rightPostIcons">
-          <span className="material-symbols-outlined">bookmark</span>
+          <button className="saveButton" onClick={saveClick}>
+            <span className="material-symbols-outlined">
+              {save == false ? "bookmark_add" : "bookmark_added"}
+            </span>
+            {save == false ? "" : "Saved!"}
+          </button>
         </div>
       </div>
       <div className="postText">
