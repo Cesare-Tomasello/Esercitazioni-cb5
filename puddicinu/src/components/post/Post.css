@@ -9,7 +9,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px;
-  width: 26em;
+  width: 350px;
   height: 500px;
   font-size: 0.8rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -35,8 +35,14 @@
 }
 
 .postImg {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background-color: rgb(255, 255, 125);
+  box-shadow: inset 0 0 5px rgb(55, 49, 248);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    317deg,
+    rgb(148, 71, 199) 20%,
+    rgb(255, 64, 172) 50%,
+    rgb(250, 186, 97) 80%
+  );
   border-radius: 100%;
   height: 50px;
   width: 50px;
@@ -44,9 +50,8 @@
 
 .fakeImgContainer {
   height: 330px;
-  width: 380px;
-  object-fit: fill;
-  background-color: rgb(221, 221, 221);
+  width: 360px;
+  overflow: hidden;
 }
 
 .likeButton {
@@ -70,8 +75,12 @@
 
 .postText {
   text-align: left;
-  height: 80px;
+  height: 70px;
   overflow-y: scroll;
+}
+
+.postText::-webkit-scrollbar {
+  display: none;
 }
 
 .saveButton {

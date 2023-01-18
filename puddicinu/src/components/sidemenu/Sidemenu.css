@@ -1,0 +1,45 @@
+.Sidemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 130px;
+  height: 100%;
+}
+
+.sideMenuBtn {
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 116.75px;
+  padding: 4px 4px;
+  font-size: 13px;
+  gap: 10px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 35%;
+  transition: all 0.3s;
+}
+
+.sideMenuBtn:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.sideMenuHome {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sideMenuOptions {
+  margin-bottom: 35px;
+}
+
+.sideMenuOthers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
