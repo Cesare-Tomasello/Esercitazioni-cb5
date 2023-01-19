@@ -7,20 +7,19 @@ function Post({ data }) {
   const [user, setUser] = useState({});
   const imgUrl = "https://picsum.photos/380/330?";
 
-  let [like, setLike] = useState(false);
-  let [save, setSave] = useState(false);
+  const [like, setLike] = useState(false);
+  const [save, setSave] = useState(false);
 
   const likeClick = () => {
-    like = setLike(!like);
+    setLike((prev) => !prev);
   };
 
   const saveClick = () => {
-    save = setSave(!save);
+    setSave((prev) => !prev);
   };
 
   useEffect(() => {
     GET(`users/${data.userId}`).then((user) => setUser(user));
-    console.log(data);
   }, []);
 
   return (

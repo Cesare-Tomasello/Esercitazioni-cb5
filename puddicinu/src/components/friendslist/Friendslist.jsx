@@ -5,16 +5,16 @@ import { useState, useEffect } from "react";
 import { GET } from "../utils/Fetch";
 
 function Friendslist() {
-  const [msgList, setMsgList] = useState([]);
+  const [friendList, setFriendList] = useState([]);
 
   useEffect(() => {
-    GET("posts").then(({ posts }) => setMsgList(posts));
+    GET("users").then((data) => setFriendList(data.users));
   }, []);
 
   return (
     <div className="Friendslist">
-      {msgList.map((msg) => (
-        <Friends data={msg} key={msg.id} />
+      {friendList.map((user) => (
+        <Friends data={user} key={user.id} />
       ))}
     </div>
   );
