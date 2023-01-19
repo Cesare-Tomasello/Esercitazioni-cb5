@@ -10,7 +10,7 @@
   gap: 8px;
   padding: 10px;
   width: 350px;
-  height: 500px;
+  height: 530px;
   font-size: 0.8rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -32,6 +32,7 @@
 
 .headerMenu {
   font-size: 30px;
+  cursor: pointer;
 }
 
 .postImg {
@@ -49,8 +50,8 @@
 }
 
 .fakeImgContainer {
-  height: 330px;
-  width: 360px;
+  height: 350px;
+  width: 370px;
   overflow: hidden;
 }
 
@@ -73,14 +74,25 @@
   gap: 15px;
 }
 
-.postText {
-  text-align: left;
-  height: 70px;
-  overflow-y: scroll;
+.leftPostIcons button {
+  cursor: pointer;
+  background: none;
+  border: 0;
 }
 
-.postText::-webkit-scrollbar {
-  display: none;
+.rightPostIcons {
+  box-sizing: border-box;
+}
+
+.likes {
+  width: 100%;
+}
+
+.postText {
+  text-align: left;
+  height: 75px;
+  overflow-y: scroll;
+  padding-right: 10px;
 }
 
 .saveButton {
@@ -90,4 +102,13 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .postText::-webkit-scrollbar {
+    width: 3px;
+  }
+  .postText::-webkit-scrollbar-thumb {
+    background-color: rgba(4, 4, 4, 0.518);
+  }
 }

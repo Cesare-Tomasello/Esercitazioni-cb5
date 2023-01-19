@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 20px auto;
+  gap: 12px;
+  margin: auto;
   padding: 20px;
   height: 100px;
   max-width: 330px;
@@ -38,4 +38,10 @@
 
 .formSubmit:hover {
   border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .Form {
+    margin: 20px auto;
+  }
 }

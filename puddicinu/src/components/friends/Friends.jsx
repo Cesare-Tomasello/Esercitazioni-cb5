@@ -7,7 +7,7 @@ function Friends({ data }) {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    GET(`users/${data.userId}`).then((user) => setUser(user));
+    GET(`users/${data.id}`).then((user) => setUser(user));
   }, []);
   return (
     <div className="Friends">

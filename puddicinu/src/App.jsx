@@ -15,7 +15,6 @@ function App() {
         <Postcontainer />
       </div>
       <Filterlist />
-      {/* <Bottommenu/> */}
     </div>
   );
 }

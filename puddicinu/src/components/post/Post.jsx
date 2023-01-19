@@ -20,6 +20,7 @@ function Post({ data }) {
 
   useEffect(() => {
     GET(`users/${data.userId}`).then((user) => setUser(user));
+    console.log(data);
   }, []);
 
   return (
@@ -42,21 +43,26 @@ function Post({ data }) {
         <div className="leftPostIcons">
           <button className="likeButton" onClick={likeClick}>
             <span className="material-symbols-outlined">
-              {like == false ? "favorite" : "heart_plus"}
+              {like === false ? "favorite" : "heart_plus"}
             </span>
           </button>
-          <span className="material-symbols-outlined">chat_bubble</span>
-          <span className="material-symbols-outlined">send</span>
+          <button>
+            <span className="material-symbols-outlined">chat_bubble</span>
+          </button>
+          <button>
+            <span className="material-symbols-outlined">send</span>
+          </button>
         </div>
         <div className="rightPostIcons">
           <button className="saveButton" onClick={saveClick}>
             <span className="material-symbols-outlined">
-              {save == false ? "bookmark_add" : "bookmark_added"}
+              {save === false ? "bookmark_add" : "bookmark_added"}
             </span>
-            {save == false ? "" : "Saved!"}
+            {save === false ? "" : "Saved!"}
           </button>
         </div>
       </div>
+      <h4 className="likes">{data.reactions} likes</h4>
       <div className="postText">
         <h4>{data.title}</h4>
         <p>{data.body}</p>

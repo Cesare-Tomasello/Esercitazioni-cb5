@@ -1,45 +1,69 @@
 .Sidemenu {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding-left: 10px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   min-width: 130px;
-  height: 100%;
+  background-color: white;
 }
 
 .sideMenuBtn {
   border: none;
   display: flex;
   align-items: center;
-  width: 116.75px;
-  padding: 4px 4px;
-  font-size: 13px;
   gap: 10px;
   background-color: white;
   cursor: pointer;
   border-radius: 35%;
-  transition: all 0.3s;
+  font-size: 0;
 }
 
 .sideMenuBtn:hover {
   background-color: rgb(231, 231, 231);
+  transition: all 0.3s;
 }
 
 .sideMenuHome {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.sideMenuOptions {
-  margin-bottom: 35px;
-}
-
 .sideMenuOthers {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Sidemenu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15vw;
+    height: 100%;
+  }
+
+  .sideMenuBtn {
+    width: 116.75px;
+    padding: 4px 4px;
+    font-size: 13px;
+  }
+
+  .sideMenuHome {
+    margin-top: 20px;
+  }
+
+  .sideMenuOptions {
+    margin-bottom: 35px;
+  }
+
+  .sideMenuOthers {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sideMenuBtn {
+    margin-left: 3vw;
+  }
 }

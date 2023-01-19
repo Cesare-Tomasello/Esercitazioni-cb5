@@ -1,10 +1,13 @@
 import "./Filterlist.css";
- import React from 'react'
- 
- function Filterlist() {
-   return (
-     <div className="Filterlist">Filterlist</div>
-   )
- }
- 
- export default Filterlist
+import React from "react";
+import Filterfriends from "../filterfriends/Filterfriends";
+
+function Filterlist() {
+  return (
+    <div className="Filterlist">
+      <Filterfriends />
+    </div>
+  );
+}
+
+export default Filterlist;
