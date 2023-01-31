@@ -6,6 +6,8 @@ import App from "./App";
 import ErrorPage from "./error-page";
 import Users from "./routes/users";
 import User from "./routes/user";
+import Posts from "./routes/posts";
+import Post from "./routes/post";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: "/users/:userId",
     element: <User />,
+  },
+  {
+    path: "/posts",
+    element: <Posts />,
+  },
+  {
+    path: "/posts/:postId",
+    element: <Post />,
   },
 ]);
 

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Post {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  .singleTag {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .goBackBtn {
+    padding: 5px 10px;
+    background-color: rgb(0, 128, 255);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

@@ -15,6 +15,7 @@ function User() {
 
   const prevBtn = () => navigate(`/users/${parseInt(userId) - 1}`);
   const nextBtn = () => navigate(`/users/${parseInt(userId) + 1}`);
+  const backBtn = () => navigate("/users");
 
   return (
     <div className={style.User}>
@@ -25,6 +26,7 @@ function User() {
         <button disabled={userId < 30 ? false : true} onClick={nextBtn}>
           Next
         </button>
+        <button onClick={backBtn}>Go Back</button>
       </div>
 
       <div className={style.userCard}>
