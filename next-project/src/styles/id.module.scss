@@ -1,0 +1,43 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .goBackBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 40px;
+  }
+
+  .singleUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 10px solid;
+    border-radius: 20px;
+    border-color: rgb(0, 123, 255);
+    height: 400px;
+    width: 300px;
+    .singleUserImg {
+      width: 150px;
+      background-color: rgb(208, 208, 208);
+      border-radius: 100%;
+    }
+    .singleUserPhone,
+    .singleUserAddress,
+    .singleUserCity {
+      font-weight: bold;
+    }
+  }
+}
