@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background: linear-gradient(120deg, rgb(52, 72, 255), rgb(206, 99, 255), rgb(253, 91, 91));
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .buttonsContainer {
+    display: flex;
+    gap: 20px;
+    .handleButton {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: white;
+      border: 6px solid transparent;
+      cursor: pointer;
+      transition: all 0.1s;
+      &:hover {
+        border-color: rgb(31, 23, 255);
+        font-weight: bold;
+      }
+    }
+  }
+}
